@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.cabecalho{
+    background-color: #3944A4;
+    width: 100%;
+    height: 45px;
+}
+.menu{
+    background-color: #FF9901;
+}
+.menu ul{
+    margin-top: 0;
+    list-style: none;
+    display: flex;
+}
+.menu ul li{
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI';
+    font-size: 24px;
+    font-weight: 900;
+    margin-right: 20px;
+}
+.container{
+    width: 100%;
+    height: 630px;
+    background-color: #3944A4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    height: 600px;
+    transition: 4.5s;
+}
+
+.logo:hover{
+    /*transform: scale(1.1);*/
+    transform: rotate3d(0, 1, 0, 360deg);
+}
+.rodape{
+    width: 100%;
+    background-color: #3944A4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100px;
+}
+.rodape p{
+    margin-right: 20px;
+    font-family: 'Segoe UI';
+    color: white;
+    font-weight: 900;
+}
+.codec{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 900px){
+    .cabecalho{
+        background-color: #3944A4;
+        width: 100%;
+        height: 45px;
+    }
+    .menu ul{
+        padding: 0;
+        margin: 0;
+    }
+    .menu ul li a{
+        margin-left: 25px;
+        margin-right: 0px;
+    }
+    .logo{
+        height: 300px;
+        border: none;
+    }
+    .logo:hover{
+        transform: none
+    }
+    .container{
+        height: 522px;
+    }
+    .rodape{
+        justify-content: center;
+    align-items: center;
+    }
+}
