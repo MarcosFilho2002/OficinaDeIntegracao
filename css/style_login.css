@@ -6,50 +6,64 @@ body{
     background-color: #FF9901;
     width: 100%;
     height: 45px;
-}
-.menu{
-    background-color: #FF9901;
-}
-.menu ul{
-    margin-top: 0;
-    list-style: none;
     display: flex;
-}
-.menu ul li{
-    margin-top: 3px;
-    margin-bottom: 5px;
-}
-.menu ul li a{
-    text-decoration: none;
+    justify-content: center;
+    align-items: center;
     color: white;
     font-family: 'Segoe UI';
     font-size: 24px;
     font-weight: 900;
     margin-right: 20px;
 }
+.menu{
+    background-color: #FF9901;
+}
+
 .container{
     width: 100%;
     height: 630px;
     background-color: #3944A4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .logo{
-    height: 600px;
-    transition: 4.5s;
+    display: block;
+    width: 300px;
+    margin: 0 auto;
 }
-
-.logo:hover{
-    /*transform: scale(1.1);*/
-    transform: rotate3d(0, 1, 0, 360deg);
+.logar{
+    width: 180px;
+    height: 100px;
+    margin: 0 auto;
+    color: white;
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    font-weight: 900;
+}
+.logar input{
+    margin-top: 5px;
+    width: 160px;
+}
+.btn-entrar{
+    display: block;
+    width: 80px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #FF9901;
+    border: none;
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.9s;
+}
+.btn-entrar:hover{
+    transform: scale(1.1);
 }
 .rodape{
     width: 100%;
     background-color: #3944A4;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: flex-end;
     height: 100px;
 }
@@ -64,19 +78,22 @@ body{
     color: white;
     cursor: pointer;
 }
-.abrirSubMenu{
-    height: 30px;
-    padding-bottom: 15px;
+.btn-cadastrar{
+    width: 150px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    background-color: #FF9901;
+    border: none;
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.9s;
 }
-.abrirSubMenu:hover .submenu{
-    display: block;
+.btn-cadastrar:hover{
+    transform: scale(1.1);
 }
-.submenu{
-    margin-top: 10px;
-    width: 120.55px;
-    background-color: #3944A4;
-    display: none;
-}
+
 
 
 @media (max-width: 900px){

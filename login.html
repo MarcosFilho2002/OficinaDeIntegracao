@@ -3,36 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_login.css">
     <link rel="icon" href="./img/icon.png">
     <title>Panema Emporium - Início</title>
 </head>
 <body>
     <header class="cabecalho">
-        <nav class="menu">
-            <ul>
-                <li><a href="/">Cadastro</a></li>
-                <li><a href="/">Venda</a></li>
-                <li class="abrirSubMenu"><a href="/">Relatórios</a>
-                    <div class="submenu">
-                        <a href="/">Estoque</a>
-                        <a href="/">Cliente</a>
-                    </div>
-                
-                </li>
-                
-            </ul>
-        </nav>
+            <span class="bemVindo">Bem Vindo!</span> 
     </header>
 
     <main class="container">
-
-        
         <img src="./img/logo.png" alt="logo" class="logo">
-
+        <div class="logar">
+            <label for="username">Username:</label>
+            <input type="text" class="username">
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha">
+        </div>
+        <button class="btn-entrar">Entrar</button>
 
     </main>
     <footer class="rodape">
+        <button class="btn-cadastrar">Cadastrar Usuário</button>
         <p>Developed by <a href="codec.html" target="_blank" class="codec">
             Codec</a>
         </p>
