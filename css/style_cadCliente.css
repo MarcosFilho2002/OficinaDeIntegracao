@@ -8,45 +8,59 @@ body{
     width: 100%;
     height: 45px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-family: 'Segoe UI';
-    font-size: 24px;
-    font-weight: 900;
-    margin-right: 20px;
+    text-align: center;
+    justify-content: left;
 }
 .menu{
     background-color: #FF9901;
 }
 
+.cabecalho a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI';
+    font-size: 24px;
+    font-weight: 900;
+    margin-left: 3%;
+    margin-top: 4px;
+}
+
+.titulo{
+    color: white;
+    font-family: 'Segoe UI';
+    font-size: 24px;
+    font-weight: 900;
+    margin-top: 4px;
+    position: absolute;
+    left: 50%;
+    margin-left: -95px;
+}
+
 .container{
     width: 100%;
-    height: 630px;
+    height: 600px;
     background-color: #3944A4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .logo{
-    display: block;
-    width: 300px;
-    margin: 0 auto;
+    height: 300px;
 }
-.logar{
+.cadastrar{
     width: 180px;
-    height: 100px;
+    height: 300px;
     margin: 0 auto;
     color: white;
     font-family: 'Segoe UI';
     font-size: 16px;
     font-weight: 900;
 }
-.logar input{
-    margin-top: 5px;
-    width: 160px;
-}
-.btn-entrar{
+.btn-cadastrar{
     display: block;
-    width: 80px;
+    width: 100px;
     margin: 0 auto;
     margin-top: 20px;
     background-color: #FF9901;
@@ -57,16 +71,16 @@ body{
     cursor: pointer;
     transition: 0.9s;
 }
-.btn-entrar:hover{
+.btn-cadastrar:hover{
     transform: scale(1.1);
 }
 .rodape{
     width: 100%;
     background-color: #3944A4;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: flex-end;
-    height: 70px;
+    height: 100px;
 }
 .rodape p{
     margin-right: 20px;
@@ -79,27 +93,9 @@ body{
     color: white;
     cursor: pointer;
 }
-.btn-cadastrar{
-    width: 150px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    background-color: #FF9901;
-    border: none;
-    font-family: 'Segoe UI';
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.9s;
-}
-.btn-cadastrar:hover{
-    transform: scale(1.1);
-}
-
-
 
 @media (max-width: 900px){
     .cabecalho{
-        background-color: #3944A4;
         width: 100%;
         height: 45px;
     }
@@ -123,24 +119,16 @@ body{
     }
     .rodape{
         justify-content: center;
-        align-items: center;
+    align-items: center;
     }
-}
-@media (max-width: 1400px){
-    .container{
-        width: 100%;
-        height: 554px;
-    }
-    .rodape{
-        width: 100%;
-        background-color: #3944A4;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        height: 50px;
-    }
-    .logo{
-        height: 300px;
-        border: none;
-    }
+} 
+    @media (max-width: 1400px){
+        .container{
+            width: 100%;
+            height: 504px;
+            background-color: #3944A4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 }
