@@ -38,7 +38,7 @@ body{
     margin-top: 4px;
     position: absolute;
     left: 50%;
-    margin-left: -95px;
+    margin-left: -47px; 
 }
 
 .container{
@@ -136,4 +136,20 @@ body{
             justify-content: center;
             align-items: center;
         }
+}
+
+table{
+    border: solid 2px black;
+    color: black;
+    background-color: rgb(185, 185, 185);
+}
+tr{ 
+    border: solid 2px black;
+}
+
+th{
+    border: solid 2px black;
+}
+td{
+    border: solid 2px black;
 }
