@@ -1,0 +1,206 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #3944A4;
+}
+.cabecalho{
+    background-color: #FF9901;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    text-align: center;
+    justify-content: left;
+}
+.menu{
+    background-color: #FF9901;
+}
+
+.cabecalho a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI';
+    font-size: 24px;
+    font-weight: 900;
+    margin-left: 3%;
+    margin-top: 4px;
+    display: flex;
+}
+
+.voltar{
+    align-self: center;
+}
+
+.titulo{
+    color: white;
+    font-family: 'Segoe UI';
+    font-size: 24px;
+    font-weight: 900;
+    margin-top: 4px;
+    position: absolute;
+    left: 50%;
+    margin-left: -47px; 
+}
+
+.container{
+    width: 100%;
+    height: 600px;
+    background-color: #3944A4;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.container_logo{
+    position: absolute;
+    right: 0;
+    top: -5px;
+}
+
+.logo{
+    height: 275px;
+}
+
+.container_carrinho{
+    background-color: gray;
+    width: 30%;
+    height: 94vh;
+    padding-left: 10px;
+}
+
+.h3_carrinho{
+    display: block;
+    margin: 0 auto;
+}
+
+table{
+    width: 95%;
+}
+
+.total{
+    width: 94%;
+    
+    border: solid 2px black;
+    border-top: solid 0px black;
+    background-color: rgb(185, 185, 185);
+}
+
+.total p{
+    margin: 0 auto;
+    font-size: 32px;
+    font-weight: 900;
+    text-align: left;
+}
+
+.valor_total{
+    margin-left: 210px;
+}
+
+.rodape{
+    width: 100%;
+    background-color: #3944A4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100px;
+}
+.rodape p{
+    margin-right: 20px;
+    font-family: 'Segoe UI';
+    color: white;
+    font-weight: 900;
+}
+.codec{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 900px){
+    .cabecalho{
+        width: 100%;
+        height: 45px;
+    }
+    .menu ul{
+        padding: 0;
+        margin: 0;
+    }
+    .menu ul li a{
+        margin-left: 25px;
+        margin-right: 0px;
+    }
+    .logo{
+        height: 275px;
+        border: none;
+    }
+    .logo:hover{
+        transform: none
+    }
+    .container{
+        height: 522px;
+    } 
+    .container_carrinho{
+        background-color: gray;
+        width: 30%;
+        height: 94vh;
+    }
+    
+    .h3_carrinho{
+        display: block;
+        margin: 0 auto;
+    }
+    .rodape{
+        justify-content: center;
+        align-items: center;
+    }
+} 
+    @media (max-width: 1400px){
+        .container{
+            width: 100%;
+            height: 600px;
+            background-color: #3944A4;
+            display: flex;
+            flex-direction: row;
+        }
+        .container_carrinho{
+            background-color: gray;
+            width: 30%;
+            height: 94vh;
+        }
+        
+        .h3_carrinho{
+            display: block;
+            margin: 0 auto;
+        }
+        .valor_total{
+            margin-left: 140px;
+        }
+        .comprar{
+            width: 180px;
+            height: 100px;
+            margin: 50px 200px;
+            color: white;
+            font-family: 'Segoe UI';
+            font-size: 16px;
+            font-weight: 900;
+        }
+        .comprar input{
+            margin-top: 5px;
+            width: 160px;
+        }
+}
+
+table{
+    border: solid 2px black;
+    color: black;
+    background-color: rgb(185, 185, 185);
+}
+tr{ 
+    border: solid 2px black;
+}
+
+th{
+    border: solid 2px black;
+}
+td{
+    border: solid 2px black;
+}
