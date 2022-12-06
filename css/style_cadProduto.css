@@ -98,6 +98,18 @@ body{
     color: white;
     cursor: pointer;
 }
+.alerta{
+    position: absolute;
+    right: 620px;
+    bottom: 647px;
+    z-index: 1000;
+    width: 300px;
+    text-align: center;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: none;
+}
 
 @media (max-width: 900px){
     .cabecalho{
@@ -135,5 +147,11 @@ body{
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+        .alerta{
+            position: absolute;
+            right: 535px;
+            bottom: 550px;
+            display: none;
         }
 }

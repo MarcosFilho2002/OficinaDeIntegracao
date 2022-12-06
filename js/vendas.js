@@ -1,20 +1,66 @@
+let produtos = new Array();
+let disponivel = new Array();
+
+produtos = JSON.parse(localStorage.getItem("produtos"));
+
+produtos.forEach(element => {
+    var table = document.querySelector('.tabelinha');
+    var tr = document.createElement('tr');
+    var td1 = document.createElement('td');
+    var td2 = document.createElement('td');
+
+    td1.append(element.codigo);
+    td2.append(element.nome);
+
+    tr.append(td1,td2);
+
+    table.appendChild(tr);
+});
+
+produtos.forEach(element => {
+    disponivel.push(element.codigo);
+});
+
+document.querySelector('.codigo').addEventListener('keyup',()=>{
+    var valor = document.querySelector('.codigo').value;
+    document.querySelector('.nomeProduto').textContent = '';
+    if(disponivel.includes(valor)){
+        var produto = '';
+       produtos.forEach(element => {
+            console.log(element.codigo)
+            if(element.codigo == valor){
+                produto = element.nome;
+            }
+       });
+
+        let nomeProduto = document.querySelector('.nomeProduto');
+        let texto = document.createTextNode(produto);
+        nomeProduto.appendChild(texto);
+
+    }else{
+        console.log('não inclui')
+    }
+
+});
+
 document.querySelector('.btn-add').addEventListener('click', ()=>{
     let codigo = document.querySelector('.codigo').value;
     let quantidade = document.querySelector('.quantidade').value;
-    console.log(codigo);
-    let produto = '';
-    let preco = 0;
-    if(codigo == 1){
-        produto = 'Cerveja 350ml';
-        preco = 3.50;
-    }else if(codigo == 2){
-        produto = 'Vodka 1L';
-        preco = 32.00;
-    }else if(codigo == 3){
-        produto = 'Refrigerante 350ml';
-        preco = 3.00;
+    if(disponivel.includes(codigo)){
+        var produto = '';
+        var preco = 0;
+        var quantidadeInt = parseInt(quantidade)
+       produtos.forEach(element => {
+            console.log(element.codigo)
+            if(element.codigo == codigo){
+                produto = element.nome;
+                preco = parseFloat(element.valor);
+
+            }
+       });
     }
-    let quantidadeInt = parseInt(quantidade)
+
+    console.log(preco);
 
     if(codigo !=='' && quantidade !== '' && quantidadeInt > 0){
         addNewtr(quantidade,produto,preco);
@@ -33,34 +79,13 @@ document.querySelector('.btn-add').addEventListener('click', ()=>{
         console.log(aux);
         document.querySelector('.valor_total').textContent = 'R$ '+(resultado+aux).toFixed(2);
     }
-    
-    
-
 
 });
 
 function addNewtr(quantidade, produto, preco){
-    $("table").append("<tr> <td>"+quantidade+"</td> <td>"+produto+"</td> <td>"+"R$ "+preco.toFixed(2)+"</td> </tr>");
+    $(".tabela-venda").append("<tr> <td>"+quantidade+"</td> <td>"+produto+"</td> <td>"+"R$ "+preco.toFixed(2)+"</td> </tr>");
 }
 
 function soma(quantidade, preco){
     return preco*quantidade;
 }
-
-document.querySelector('.codigo').addEventListener('keyup',()=>{
-    let codigo = document.querySelector('.codigo').value;
-    console.log(codigo);
-    let produto = '';
-    document.querySelector('.nomeProduto').textContent = '';
-    if(codigo == 1){
-        produto = 'Cerveja 350ml';
-    }else if(codigo == 2){
-        produto = 'Vodka 1L';
-    }else if(codigo == 3){
-        produto = 'Refrigerante 350ml';
-    }
-    let nomeProduto = document.querySelector('.nomeProduto');
-    let texto = document.createTextNode(produto);
-    nomeProduto.appendChild(texto);
-    console.log(nomeProduto.textContent)
-});

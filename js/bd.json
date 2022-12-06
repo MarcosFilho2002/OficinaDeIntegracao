@@ -1,0 +1,100 @@
+{
+    "Usuario": [
+      {
+        "id": "1",
+        "username": "admin",
+        "senha": "admin"
+      },
+      {
+        "id": "2",
+        "username": "panema",
+        "senha": "123"
+      }
+    ],
+
+    "Produto": [
+        {
+          "id": "1",
+          "codigo": "1",
+          "nome": "Refrigerante Coca Cola - 350ml",
+          "categoria": "Bebida",
+          "valor": "3.99",
+          "quantidade": "110"
+        },
+        {
+            "id": "2",
+            "codigo": "2",
+            "nome": "Refrigerante Guaraná Antarctica - 350ml",
+            "categoria": "Bebida",
+            "valor": "3.99",
+            "quantidade": "80"
+        },
+        {
+            "id": "3",
+            "codigo": "3",
+            "nome": "Cerveja Antarctica - 350ml",
+            "categoria": "Bebida",
+            "valor": "3.50",
+            "quantidade": "305"
+        },
+        {
+            "id": "4",
+            "codigo": "4",
+            "nome": "Cerveja Heineken - 330ml",
+            "categoria": "Bebida",
+            "valor": "5.99",
+            "quantidade": "100"
+        },
+        {
+            "id": "5",
+            "codigo": "5",
+            "nome": "Vodka Smirnoff - 1L",
+            "categoria": "Bebida",
+            "valor": "39.99",
+            "quantidade": "60"
+        },
+        {
+            "id": "6",
+            "codigo": "6",
+            "nome": "Amendoim - 200g",
+            "categoria": "Comida",
+            "valor": "4.99",
+            "quantidade": "30"
+        },
+        {
+            "id": "7",
+            "codigo": "7",
+            "nome": "Chipps - 120g",
+            "categoria": "Comida",
+            "valor": "3.99",
+            "quantidade": "50"
+        }
+    ],
+
+    "Cliente": [
+        {
+          "id": "1",
+          "nome": "Marcos",
+          "CPF": "000.000.000-00",
+          "telefone": "9999-9999",
+          "endereco":"Rua Ipanema 111"
+          
+        },
+        {
+            "id": "2",
+            "nome": "Lucas",
+            "CPF": "111.111.111-11",
+            "telefone": "8888-8888",
+            "endereco":"Rua das Rosas 417"
+        }
+      ],
+
+      "Venda":[
+        {
+            "id": "1",
+            "data_venda": "27/08/2022",
+            "fk_produto_id": "3",
+            "quantidade": "12"
+        }
+      ]
+}
