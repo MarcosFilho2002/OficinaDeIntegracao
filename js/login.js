@@ -1,6 +1,6 @@
 $(function(){
 
-    $.getJSON("/js/bd.json", function(data) {
+    $.getJSON("./js/bd.json", function(data) {
         console.log(data.Cliente);
         
         let pessoas = new Array();
@@ -34,7 +34,7 @@ $(function(){
 document.querySelector('.btn-entrar').addEventListener('click', ()=>{
     $(function(){
 
-        $.getJSON("/js/bd.json", function(data) {
+        $.getJSON("./js/bd.json", function(data) {
             console.log(data.Usuario[0].username);
             
             encontraUsuario(data.Usuario);
