@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style_cadProduto.css">
-    <link rel="icon" href="../img/icon.png">
-    <title>Panema Emporium - Cadastro Produto</title>
+    <link rel="stylesheet" href="./css/style_cadCliente.css">
+    <link rel="icon" href="./img/icon.png">
+    <title>Panema Emporium - Cadastro Cliente</title>
 </head>
 <body>
     <div class="alerta">
@@ -15,24 +15,22 @@
         <a href="home.html"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-left-circle voltar" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
           </svg></a> 
-        <p class="titulo">Cadastro Produto</p>
+        <p class="titulo">Cadastro Cliente</p>
     </header>
 
     <main class="container">
        
-        <img src="../img/logo.png" alt="logo" class="logo">
+        <img src="./img/logo.png" alt="logo" class="logo">
         <div class="cadastrar">
             
-            <label for="codigo">Código:</label>
-            <input type="text" id="codigo">
-            <label for="nome">Nome:</label>
-            <input type="text" name="nome" id="nome">
-            <label for="categoria">Categoria:</label>
-            <input type="text" name="categoria" id="categoria">
-            <label for="valor">Valor:</label>
-            <input type="number" name="valor" id="valor">
-            <label for="quantidade">Quantidade:</label>
-            <input type="number" name="quantidade" id="quantidade">
+            <label for="nomeCliente">Nome:</label>
+            <input type="text" class="username">
+            <label for="CPF">CPF:</label>
+            <input type="text" name="CPF" id="CPF">
+            <label for="telefone">Telefone:</label>
+            <input type="tel" name="telefone" id="telefone">
+            <label for="endereco">Endereço:</label>
+            <input type="text" name="endereco" id="endereco">
         </div>
         <button class="btn-cadastrar">Cadastrar</button>
 
@@ -45,6 +43,6 @@
 
 
 
-    <script src="/js/cadastroProduto.js"></script>
+    <script src="./js/cadastroCliente.js"></script>
 </body>
 </html>
