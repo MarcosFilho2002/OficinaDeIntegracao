@@ -52,7 +52,7 @@ function encontraUsuario(usuario){
     usuario.forEach(element => {
         console.log(element.username)
         if(senha == element.senha && username == element.username){
-            window.location.href = '../html/home.html';
+            window.location.href = './html/home.html';
         }else{
             document.querySelector('.alerta').style.display = 'block';
             setTimeout(() => {

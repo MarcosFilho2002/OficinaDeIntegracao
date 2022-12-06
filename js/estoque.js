@@ -1,6 +1,6 @@
 $(function(){
 
-    $.getJSON("/js/bd.json", function(data) {
+    $.getJSON("./js/bd.json", function(data) {
         let produtos = new Array();
         data.Produto.forEach(element => {
            produtos.push(element);

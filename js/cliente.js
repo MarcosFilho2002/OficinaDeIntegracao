@@ -1,6 +1,6 @@
 $(function(){
 
-    $.getJSON("/js/bd.json", function(data) {
+    $.getJSON("./js/bd.json", function(data) {
         let pessoas = new Array();
         data.Cliente.forEach(element => {
            pessoas.push(element); 
