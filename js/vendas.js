@@ -83,7 +83,20 @@ document.querySelector('.btn-add').addEventListener('click', ()=>{
 });
 
 function addNewtr(quantidade, produto, preco){
-    $(".tabela-venda").append("<tr> <td>"+quantidade+"</td> <td>"+produto+"</td> <td>"+"R$ "+preco.toFixed(2)+"</td> </tr>");
+    var tr = document.createElement('tr');
+    var td1 = document.createElement('td');
+    var td2 = document.createElement('td');
+    var td3 = document.createElement('td');
+
+    td1.append(quantidade);
+    td2.append(produto);
+    td3.append(preco.toFixed(2));
+
+    tr.append(td1,td2,td3);
+
+    //table.appendChild(tr);
+
+    document.querySelector(".tabela-venda").appendChild(tr);
 }
 
 function soma(quantidade, preco){
